@@ -1,0 +1,27 @@
+.emp-body{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.body-section-left{
+    width: 300px;
+    border-right: 1.5px solid #E0E0E0;
+}
+
+ul{
+    margin-left: -32px !important;
+}
+
+ul li{
+    list-style-type: none;
+    display: flex;
+    width: 230px;
+    align-items: center;
+    justify-content: space-between;
+    color: #222222;
+}
+#verification{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
