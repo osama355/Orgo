@@ -24,26 +24,18 @@ function EmployeeHeader() {
     const timer = setInterval(() => {
       let hours = new Date().getHours().toLocaleString(); //Current Hours
       let min = new Date().getMinutes().toLocaleString(); //Current Minutes
-      let sec = new Date().getSeconds().toLocaleString(); //Current Seconds
       let ampm = hours >= 12 ? "pm" : "am";
       hours = hours % 12;
       hours = hours ? hours : 12;
       min = min.toString().padStart(2, "0");
       setTime(hours + ":" + min + " " + ampm + " local time");
     }, 1000);
+
     return () => {
       clearInterval(timer);
     };
+    
   }, []);
-
-  // useEffect(()=>{
-  //   const timer = setInterval(()=>{
-  //     setTime(new Date().getMinutes().toLocaleString());
-  //   },1000)
-  //   return ()=>{
-  //     clearInterval(timer)
-  //   }
-  // },[])
 
   return (
     <div className="emp-head-main">

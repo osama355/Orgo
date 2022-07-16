@@ -49,42 +49,15 @@
 .guideLine-link :hover {
   text-decoration: underline;
 }
-.closeButton {
-  width: 100px;
-  height: 30px;
-  border: none;
-  font-family: sans-serif;
-  border-radius: 4px;
-  cursor: pointer;
-  background-color: #454545;
-  color: white;
-}
-.closeButton:hover {
-  background-color: #1b272d;
-  transition: ease-out 0.8s;
-}
+
 
 .button-container {
   display: flex;
-  width: 91%;
-  margin-left: 25px;
   margin-top: 25px;
+  margin-right: 25px;
   flex-direction: row;
   justify-content: flex-end;
-  margin-bottom: 30px;
-}
-
-.cancel {
-  margin-right: 20px;
-}
-button {
-  padding: 10px;
-  border-radius: 30px;
-  width: 120px;
-  background-color: white;
-  color: #3c8224;
-  border: 1px solid #9a9a9a;
-  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 @keyframes drop {
@@ -98,4 +71,10 @@ button {
     transform: translateY(420px);
     opacity: 1;
   }
+}
+
+
+/* hour pop up */
+.radio-lable{
+  font-size: 0.9em;
 }

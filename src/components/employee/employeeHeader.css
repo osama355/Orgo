@@ -1,6 +1,7 @@
 .emp-head-main{
     width: 100%;
     display: flex;
+    color: #656565;
 }
 
 .head-container1{
@@ -43,7 +44,6 @@
 }
 .user-name{
     margin-top: -15px;
-    color: #222222;
 }
 .location-time{
     margin-top: -25px;

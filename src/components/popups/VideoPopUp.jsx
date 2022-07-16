@@ -1,5 +1,6 @@
 import React from "react";
 import "../popups/popup.css";
+import Button from "../button/Button";
 
 function VideoPopUp({ handleClose }) {
   return (
@@ -35,8 +36,8 @@ function VideoPopUp({ handleClose }) {
         <hr />
 
         <div className="button-container">
-            <button className="cancel" onClick={handleClose}>Cancel</button>
-            <button className="save">Save</button>
+            <Button className="cancel" content="Cancel" handle={handleClose} />
+            <Button className="save" content="Save" />
         </div>
       </div>
     </div>
@@ -45,10 +46,3 @@ function VideoPopUp({ handleClose }) {
 
 export default VideoPopUp;
 
-{
-  /* <h1></h1>
-        <p>Your Data has been stored in our Database</p>
-        <button className="closeButton" onClick={handleClose}>
-          Close
-        </button> */
-}
